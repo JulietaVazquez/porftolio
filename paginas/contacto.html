@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+
+    <!-- Letra Julieta Vazquez -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Letra página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Link Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7b717a34c9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="barra">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./sobremi.html"> Sobre Mi </a></li>
+          <li><a href="./formacion.html"> Formación </a></li>
+          <li><a href="./trabajos.html"> Trabajos </a></li>
+          <li><a href="./recomendaciones.html"> Recomendaciones </a></li>
+          <li><a href="./contacto.html"> Contacto</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="nombre">Julieta Sabrina Vazquez</h1>
+      <h3 class="subtitulo">Contactame</h3>
+    </header>
+
+    <form class="formulario">
+      <div>
+        <input
+          type="text"
+          placeholder="Ingrese su nombre"
+          class="formularioCompletar"
+        />
+      </div>
+      <div>
+        <!-- <label for="emailContacto">Email:</label> -->
+        <input
+          type="email"
+          id="emailContacto"
+          placeholder="Ingrese su Email"
+          class="formularioCompletar"
+        />
+      </div>
+
+      <textarea
+        placeholder="Escriba su mensaje"
+        class="formularioMensaje"
+      ></textarea>
+
+      <div class="formularioBotones">
+        <input type="reset" value="Borrar" class="boton" id="borrar" />
+        <input type="submit" value="Enviar" class="boton" id="enviar" />
+      </div>
+    </form>
+
+    <footer class="pieDePagina">
+      <div class="nombrePie">
+        <p>Julieta Vazquez</p>
+      </div>
+      <div>
+        <ul class="redes">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vazquezjulietas/"
+              title="LinkedIn"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JulietaVazquez"
+              title="Github"
+              target="_blank"
+            >
+              <i class="fab fa-github-square fa-2x"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://t.me/Juli1790" title="Telegram" target="_blank">
+              <i class="fab fa-telegram-plane fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
