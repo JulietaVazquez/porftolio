@@ -153,6 +153,7 @@ body {
 .barra li a{
   text-decoration: none;  
   transition: transform 2s;
+  color: white;
 }
 
 .barra li:hover{
@@ -172,7 +173,7 @@ li {
 .nombre {
   color: deeppink;
   font-family: "IBM Plex Serif", serif;
-  font-size: 7vw;
+  font-size: 4vw;
   margin-bottom: 1vw;  
   display: flex;
   flex-direction: row;
@@ -181,12 +182,31 @@ li {
   grid-area: nombre;
 }
 
+.nombre:hover{
+  animation: nombreEnColores 3s infinite;
+}
+
+@keyframes nombreEnColores{
+ 0%{
+   color: deeppink
+ } 
+ 25%{
+   color: blue;
+ }
+ 50%{
+   color: aqua;
+ }
+ 100%{
+   color: magenta;
+ }
+}
+
 .subtitulo{
   background: rgb(150,130,147);
   background: linear-gradient(90deg, rgba(150,130,147,1) 42%, rgba(241,37,209,1) 99%);
   color:blue;
   font-family: "IBM Plex Serif", serif;
-  font-size: 5vw;
+  font-size: 3vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -281,6 +301,12 @@ li {
     flex-direction: column;
     align-items: left;
     grid-area: nombre;
+    transition: transform 3s, box-shadow 10s;
+   }
+
+   .sobreMiFoto:hover{
+    transform: scale(2.2);
+    z-index: 100;
    }
 
    .presentacionDescripcion{
@@ -603,5 +629,3 @@ transition: transform 2s;
 .telegram{
  color: #0088cc
 }
-
-
