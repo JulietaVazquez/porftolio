@@ -4,30 +4,29 @@
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color:rgb(207, 205, 205);
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(207, 205, 205);
   width: 100vw;
   min-height: 100vh;
 }
 
 /* Inicio Body INDEX */
-.inicio{
+.inicio {
   display: grid;
-  grid-template-areas: 
-  "barra"
-  "nombre"
-  "nombre"
-  "fotoCentral"
-  "fotoCentral"
-  "fotoCentral"
-  "descripcion"
-  "descripcion"
-  "invitacion"
-  "pieDePagina"
-  ;
+  grid-template-areas:
+    "barra"
+    "nombre"
+    "nombre"
+    "fotoCentral"
+    "fotoCentral"
+    "fotoCentral"
+    "descripcion"
+    "descripcion"
+    "invitacion"
+    "pieDePagina";
 }
 
-.inicio{
+.inicio {
   background-image: url("/img/fondo2.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -37,144 +36,136 @@ body {
 }
 /* Fin Body Index */
 
-
 /* Inicio Body Sobre Mi */
 /* Celular */
-.sobreMiBody{
+.sobreMiBody {
   display: grid;
-  grid-template-areas: 
-  "barra"
-  "nombre"
-  "nombre"
-  "subtitulo"
-  "sobreMiFoto"
-  "presentacionDescripcion"
-  "sobreMiFotoFlia"
-  "sobreMiFotoEmma"
-  "sobreMiFotoPerris"
-  "conocemeMas"
-  "pieDePagina"
-  ;
+  grid-template-areas:
+    "barra"
+    "nombre"
+    "nombre"
+    "subtitulo"
+    "sobreMiFoto"
+    "presentacionDescripcion"
+    "sobreMiFotoFlia"
+    "sobreMiFotoEmma"
+    "sobreMiFotoPerris"
+    "conocemeMas"
+    "pieDePagina";
 }
 
-  /* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px){
-  .sobreMiBody{
+/* COMPUTADORA y TABLET  */
+@media only screen and (min-width: 768px) {
+  .sobreMiBody {
     display: grid;
-    grid-template-areas: 
-    "barra "
-    "nombre nombre nombre"
-    "subtitulo subtitulo subtitulo"
-    "sobreMiFoto presentacionDescripcion"
-    "sobreMiFotoFlia sobreMiFotoEmma sobreMifotoPerris"
-    "conocemeMas conocemeMas conocemeMas"
-    "pieDePagina pieDePagina pieDePagina"
-    ;
+    grid-template-areas:
+      "barra "
+      "nombre nombre nombre"
+      "subtitulo subtitulo subtitulo"
+      "sobreMiFoto presentacionDescripcion"
+      "sobreMiFotoFlia sobreMiFotoEmma sobreMifotoPerris"
+      "conocemeMas conocemeMas conocemeMas"
+      "pieDePagina pieDePagina pieDePagina";
   }
 }
 /* Fin Body Sobre Mi */
 
 /* Inicio Body Formacion */
 /* Celular */
-.bodyFormacion{
+.bodyFormacion {
   display: grid;
-  grid-template-areas: 
-  "barra"
-  "nombre"
-  "nombre"
-  "subtitulo"
-  "formacionAcademica"
-  "formacionAdicional"
-  "idiomas"
-  "pieDePagina"
-  ;
-}
-
-/* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px){
-  .bodyFormacion{
-    display: grid;
-    grid-template-areas: 
+  grid-template-areas:
     "barra"
+    "nombre"
     "nombre"
     "subtitulo"
     "formacionAcademica"
-    "formacionAdicional idiomas"
-    "pieDePagina"
-    ;
+    "formacionAdicional"
+    "idiomas"
+    "pieDePagina";
+}
+
+/* COMPUTADORA y TABLET  */
+@media only screen and (min-width: 768px) {
+  .bodyFormacion {
+    display: grid;
+    grid-template-areas:
+      "barra"
+      "nombre"
+      "subtitulo"
+      "formacionAcademica"
+      "formacionAdicional idiomas"
+      "pieDePagina";
   }
 }
 /* Fin Body Formacion */
 
 /* Inicio Body Recomendaciones */
 /* Celular */
-.bodyRecomendacion{
+.bodyRecomendacion {
   display: grid;
-  grid-template-areas: 
-  "barra"
-  "nombre"
-  "subtitulo"
-  "formulario"
-  "referencias"
-  "pieDePagina"
-  ;
-}
-
-/* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px){
-  .bodyRecomendacion{
-    display: grid;
-    grid-template-areas: 
+  grid-template-areas:
     "barra"
     "nombre"
     "subtitulo"
     "formulario"
     "referencias"
-    "pieDePagina"
-    ;
+    "pieDePagina";
+}
+
+/* COMPUTADORA y TABLET  */
+@media only screen and (min-width: 768px) {
+  .bodyRecomendacion {
+    display: grid;
+    grid-template-areas:
+      "barra"
+      "nombre"
+      "subtitulo"
+      "formulario"
+      "referencias"
+      "pieDePagina";
   }
 }
 /* Fin Body Recomendaciones */
 
 /* Barra de opciones */
 .barra {
-  background-color:grey;
-  height: 3vw;
+  background-color: grey;
+  /* height: 3vw;
   width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content:space-around ;
+  justify-content: space-around;
   align-items: center;
   /* position: fixed; */
-  grid-area: barra;
+  grid-area: barra; */
 }
 
-.barra li a{
-  text-decoration: none;  
+.barra li a {
+  text-decoration: none;
   transition: transform 2s;
   color: white;
 }
 
-.barra li:hover{
+.barra li:hover {
   transform: scale(2.2);
   z-index: 5;
 }
 
-li {
+/* li {
   display: inline-block;
   padding: 2%;
   margin: 1%;
   list-style: none;
-}
-
+} */
 
 /* Nombre de la persona a la que pertenece la página */
 .nombre {
   color: deeppink;
   font-family: "IBM Plex Serif", serif;
   font-size: 4vw;
-  margin-bottom: 1vw;  
+  margin-bottom: 1vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -182,29 +173,33 @@ li {
   grid-area: nombre;
 }
 
-.nombre:hover{
+.nombre:hover {
   animation: nombreEnColores 3s infinite;
 }
 
-@keyframes nombreEnColores{
- 0%{
-   color: deeppink
- } 
- 25%{
-   color: blue;
- }
- 50%{
-   color: aqua;
- }
- 100%{
-   color: magenta;
- }
+@keyframes nombreEnColores {
+  0% {
+    color: deeppink;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: aqua;
+  }
+  100% {
+    color: magenta;
+  }
 }
 
-.subtitulo{
-  background: rgb(150,130,147);
-  background: linear-gradient(90deg, rgba(150,130,147,1) 42%, rgba(241,37,209,1) 99%);
-  color:blue;
+.subtitulo {
+  background: rgb(150, 130, 147);
+  background: linear-gradient(
+    90deg,
+    rgba(150, 130, 147, 1) 42%,
+    rgba(241, 37, 209, 1) 99%
+  );
+  color: blue;
   font-family: "IBM Plex Serif", serif;
   font-size: 3vw;
   display: flex;
@@ -214,25 +209,23 @@ li {
   grid-area: subtitulo;
 }
 
-
-
 /* INDEX */
-.central{
+.central {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
 /* Index - Foto de la propietaria de la página */
 .fotoJuli {
   margin-bottom: 1vw;
-  grid-area: fotoCentral; 
+  grid-area: fotoCentral;
 }
 
 /* Index - Foto de la propioetaria de la página */
 .description {
-  color:pink;
+  color: pink;
   font-size: 3vw;
   text-align: center;
   grid-area: descripcion;
@@ -241,134 +234,61 @@ li {
 /* Index - Invitacion de la propioetaria de la página */
 .invitacion {
   color: blue;
-  font-size: 3vw;  
+  font-size: 3vw;
   grid-area: invitacion;
 }
 /* FIN INDEX */
 
-
-
 /* SOBRE MI */
-/* Celular */
-.sobreMiFoto{
-  display: flex;
-  justify-content: center;
-  grid-area: sobreMiFoto;
-}
-
-.presentacionDescripcion{
-  margin: 4vw;
-  grid-area: presentacionDescripcion;
-}
-
-.sobreMiFotoFlia{
-  display: flex;
-  justify-content: center;
-  grid-area: sobreMiFotoFlia;
-}
-
-.sobreMiFotoEmma{
-  display: flex;
-  justify-content: center;
-  grid-area: sobreMiFotoEmma;
-}
-
-.sobreMiFotoPerris{  
-  display: flex;
-  justify-content: center;
-  grid-area: sobreMiFotoPerris;
-}
-
-.conocemeMas{
-/*   height: 14vw;
-  width: 40vw; */
-  margin: 4vw;
-  grid-area: conocemeMas;
-}
-
 /* PC Y Tablet */
-@media only screen and (min-width: 768px){
-  .presentacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
+@media only screen and (min-width: 768px) {
+  .presentacion {
     margin-bottom: 4vw;
-  } 
+  }
 
-  .sobreMiFoto{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    grid-area: nombre;
+  .sobreMiFoto {
     transition: transform 3s, box-shadow 10s;
-   }
+  }
 
-   .sobreMiFoto:hover{
+  .sobreMiFoto:hover {
     transform: scale(2.2);
     z-index: 100;
-   }
-
-   .presentacionDescripcion{
-    display: flex;
-    flex-direction: column;
-    margin: 4vw;
-    grid-area: presentacionDescripcion;
   }
 
-  .fotosSobreMi{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  
-  .sobreMiFotoFlia{
-    display: flex;
-    justify-content: left;
-    grid-area: sobreMiFotoFlia;
+  .sobreMiFotoFlia {
     transition: transform 3s;
   }
 
-  .sobreMiFotoFlia:hover{
+  .sobreMiFotoFlia:hover {
     transform: scale(2.2);
     z-index: 100;
   }
 
-  .sobreMiFotoEmma{
-    display: flex;
-    justify-content: center;
-    grid-area: sobreMiFotoEmma;
+  .sobreMiFotoEmma {
     transition: transform 3s;
   }
 
-  .sobreMiFotoEmma:hover{
+  .sobreMiFotoEmma:hover {
     transform: scale(2.2);
     z-index: 100;
   }
-  
-  .sobreMiFotoPerris{  
-    display: flex;
-    justify-content: right;
-    grid-area: sobreMiFotoPerris;
+
+  .sobreMiFotoPerris {
     transition: transform 3s;
   }
 
-  .sobreMiFotoPerris:hover{
+  .sobreMiFotoPerris:hover {
     transform: scale(2.2);
     z-index: 100;
   }
-  
-  .conocemeMas{
-    margin: 4vw;
-    grid-area: conocemeMas;
-  }
+
 }
 /* FIN SOBRE MI */
 
 
 
 /* FORMACION */
-.formacion{
+.formacion {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -376,7 +296,7 @@ li {
   align-items: center;
 }
 
-.formacionAcademica{
+.formacionAcademica {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -385,7 +305,7 @@ li {
   grid-area: formacionAcademica;
 }
 
-.formacionAdicional{
+.formacionAdicional {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -394,7 +314,7 @@ li {
   grid-area: formacionAdicional;
 }
 
-.idiomas{
+.idiomas {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -404,14 +324,14 @@ li {
 }
 
 /* PC Y Tablet */
-@media only screen and (min-width: 768px){
-  .formacion{
+@media only screen and (min-width: 768px) {
+  .formacion {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
-   .formacionAcademica{
+  .formacionAcademica {
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
@@ -421,14 +341,14 @@ li {
     grid-area: formacionAcademica;
   }
 
-  .otrosFormacion{
-   display: flex;
-   flex-direction: row;
-   justify-content:space-around;
-   align-items: center;
+  .otrosFormacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
-  
-  .formacionAdicional{
+
+  .formacionAdicional {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -436,8 +356,8 @@ li {
     margin-right: 3vw;
     grid-area: formacionAdicional;
   }
-  
-  .idiomas{
+
+  .idiomas {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -448,16 +368,14 @@ li {
 }
 /* FIN FORMACION */
 
-
-
 /* TRABAJOS */
-.trabajos{
+.trabajos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.subtituloExperiencia{
+.subtituloExperiencia {
   margin: 1vw;
   display: flex;
   flex-direction: row;
@@ -465,12 +383,12 @@ li {
   align-items: center;
 }
 
-.experiencialaboral .voluntariado{
+.experiencialaboral .voluntariado {
   display: flex;
   flex-direction: column;
 }
 
-.puesto{
+.puesto {
   margin: 1vw;
   padding: 1vw;
   display: flex;
@@ -479,7 +397,7 @@ li {
   justify-content: flex-start;
   align-items: center;
 }
-.puestoTitulo{
+.puestoTitulo {
   margin: 1vw;
   padding: 1vw;
   display: flex;
@@ -489,23 +407,21 @@ li {
   align-items: center;
 }
 
-.nombreRol{
+.nombreRol {
   margin: 1vw;
   padding: 1vw;
 }
 /* FIN TRABAJOS */
 
-
-
 /* RECOMENDACIONES */
-.formulario{
+.formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-area: formulario;
 }
 
-.referencias{
+.referencias {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -513,16 +429,16 @@ li {
 }
 
 /* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px){
-  .formulario{
+@media only screen and (min-width: 768px) {
+  .formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area: formulario;
   }
-  
-  .referencias{
+
+  .referencias {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -532,10 +448,8 @@ li {
 }
 /* FIN RECOMENDACIONES */
 
-
-
 /* FORMULARIO DE CONTACTO Y RECOMENDACIONES*/
-.formulario{
+.formulario {
   size: 30%;
   display: flex;
   flex-direction: column;
@@ -543,25 +457,25 @@ li {
   justify-content: center;
 }
 
-.formularioCompletar{
+.formularioCompletar {
   height: 3vw;
   width: 30vw;
 }
 
-.formularioMensaje{
-  font-family: 'Roboto Condensed', sans-serif;
+.formularioMensaje {
+  font-family: "Roboto Condensed", sans-serif;
   height: 10vw;
   width: 40vw;
 }
 
-.formularioBotones{
+.formularioBotones {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
 }
 
-.boton{
+.boton {
   height: 2vw;
   width: 10vw;
   display: flex;
@@ -569,63 +483,48 @@ li {
   align-items: center;
 }
 
-#borrar{
+#borrar {
   background-color: red;
 }
 
-#enviar{
+#enviar {
   background-color: green;
 }
 /* FIN CONTACTO */
 
-
-
 /* Footer */
 .pieDePagina {
-  background-color:grey;
+  background-color: grey;
   height: 3vw;
   width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content:space-around;
-  align-items:flex-end;
+  justify-content: space-around;
+  align-items: flex-end;
   margin-top: auto;
-  grid-area: pieDePagina;
 }
 
-.pieDePagina ul li a:hover{
-color: white;
-transition: transform 2s;
+.pieDePagina ul li a:hover {
+  color: white;
+  transition: transform 2s;
 }
 
-.pieDePagina li:hover{
+.pieDePagina li:hover {
   transform: scale(2.2);
   z-index: 5;
 }
 
-.nombrePie {
-  color: deeppink;
-  font-size: 2vw;
-}
-
-.redes{
- display: flex;
- flex-direction: row;
- flex-wrap: nowrap;
- justify-content: space-around;
-}
-
-.linkedin{
+.linkedin {
   color: #0e76a8;
   margin-right: 1vw;
 }
 
-.github{
+.github {
   color: #171515;
   margin-right: 1vw;
 }
 
-.telegram{
- color: #0088cc
+.telegram {
+  color: #0088cc;
 }
