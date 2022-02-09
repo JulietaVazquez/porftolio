@@ -1,0 +1,45 @@
+/* TRABAJOS */
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .subtituloExperiencia {
+    margin: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .experiencialaboral .voluntariado {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .puesto {
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .puestoTitulo {
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nombreRol {
+    margin: 1vw;
+    padding: 1vw;
+  }
+  /* FIN TRABAJOS */

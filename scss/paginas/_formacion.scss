@@ -1,0 +1,102 @@
+/* Inicio Body Formacion */
+/* Celular */
+.bodyFormacion {
+    display: grid;
+    grid-template-areas:
+      "barra"
+      "nombre"
+      "nombre"
+      "subtitulo"
+      "formacionAcademica"
+      "formacionAdicional"
+      "idiomas"
+      "pieDePagina";
+  }
+  
+  /* COMPUTADORA y TABLET  */
+  @media only screen and (min-width: 768px) {
+    .bodyFormacion {
+      display: grid;
+      grid-template-areas:
+        "barra"
+        "nombre"
+        "subtitulo"
+        "formacionAcademica"
+        "formacionAdicional idiomas"
+        "pieDePagina";
+    }
+  }
+  /* Fin Body Formacion */
+
+ /* FORMACION */
+.formacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.formacionAcademica {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3vw;
+  grid-area: formacionAcademica;
+}
+
+.idiomas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3vw;
+  grid-area: idiomas;
+}
+
+/* PC Y Tablet */
+@media only screen and (min-width: 768px) {
+  .formacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .formacionAcademica {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+    grid-area: formacionAcademica;
+  }
+
+  .otrosFormacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .formacionAdicional {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-right: 3vw;
+    grid-area: formacionAdicional;
+  }
+
+  .idiomas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-left: 3vw;
+    grid-area: idiomas;
+  }
+}
+/* FIN FORMACION */
+ 

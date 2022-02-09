@@ -1,120 +1,69 @@
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-body {
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: rgb(207, 205, 205);
-  width: 100vw;
-  min-height: 100vh;
-}
-
-/* Inicio Body INDEX */
-.inicio {
-  display: grid;
-  grid-template-areas:
-    "barra"
-    "nombre"
-    "nombre"
-    "fotoCentral"
-    "fotoCentral"
-    "fotoCentral"
-    "descripcion"
-    "descripcion"
-    "invitacion"
-    "pieDePagina";
-}
-
-.inicio {
-  background-image: url("/img/fondo2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 90%;
-}
-/* Fin Body Index */
-
 /* Inicio Body Sobre Mi */
 /* Celular */
 .sobreMiBody {
-  display: grid;
-  grid-template-areas:
-    "barra"
-    "nombre"
-    "nombre"
-    "subtitulo"
-    "sobreMiFoto"
-    "presentacionDescripcion"
-    "sobreMiFotoFlia"
-    "sobreMiFotoEmma"
-    "sobreMiFotoPerris"
-    "conocemeMas"
-    "pieDePagina";
-}
-
-/* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px) {
-  .sobreMiBody {
     display: grid;
     grid-template-areas:
-      "barra "
-      "nombre nombre nombre"
-      "subtitulo subtitulo subtitulo"
-      "sobreMiFoto presentacionDescripcion"
-      "sobreMiFotoFlia sobreMiFotoEmma sobreMifotoPerris"
-      "conocemeMas conocemeMas conocemeMas"
-      "pieDePagina pieDePagina pieDePagina";
+      "barra"
+      "nombre"
+      "nombre"
+      "subtitulo"
+      "sobreMiFoto"
+      "presentacionDescripcion"
+      "sobreMiFotoFlia"
+      "sobreMiFotoEmma"
+      "sobreMiFotoPerris"
+      "conocemeMas"
+      "pieDePagina";
   }
-}
-/* Fin Body Sobre Mi */
-
-/* Inicio Body Formacion */
-/* Celular */
-.bodyFormacion {
-  display: grid;
-  grid-template-areas:
-    "barra"
-    "nombre"
-    "nombre"
-    "subtitulo"
-    "formacionAcademica"
-    "formacionAdicional"
-    "idiomas"
-    "pieDePagina";
-}
-
-/* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px) {
+  
+  /* COMPUTADORA y TABLET  */
+  @media only screen and (min-width: 768px) {
+    .sobreMiBody {
+      display: grid;
+      grid-template-areas:
+        "barra "
+        "nombre nombre nombre"
+        "subtitulo subtitulo subtitulo"
+        "sobreMiFoto presentacionDescripcion"
+        "sobreMiFotoFlia sobreMiFotoEmma sobreMifotoPerris"
+        "conocemeMas conocemeMas conocemeMas"
+        "pieDePagina pieDePagina pieDePagina";
+    }
+  }
+  /* Fin Body Sobre Mi */
+  
+  /* Inicio Body Formacion */
+  /* Celular */
   .bodyFormacion {
     display: grid;
     grid-template-areas:
       "barra"
       "nombre"
+      "nombre"
       "subtitulo"
       "formacionAcademica"
-      "formacionAdicional idiomas"
+      "formacionAdicional"
+      "idiomas"
       "pieDePagina";
   }
-}
-/* Fin Body Formacion */
-
-/* Inicio Body Recomendaciones */
-/* Celular */
-.bodyRecomendacion {
-  display: grid;
-  grid-template-areas:
-    "barra"
-    "nombre"
-    "subtitulo"
-    "formulario"
-    "referencias"
-    "pieDePagina";
-}
-
-/* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px) {
+  
+  /* COMPUTADORA y TABLET  */
+  @media only screen and (min-width: 768px) {
+    .bodyFormacion {
+      display: grid;
+      grid-template-areas:
+        "barra"
+        "nombre"
+        "subtitulo"
+        "formacionAcademica"
+        "formacionAdicional idiomas"
+        "pieDePagina";
+    }
+  }
+  /* Fin Body Formacion */
+  
+  /* Inicio Body Recomendaciones */
+  /* Celular */
   .bodyRecomendacion {
     display: grid;
     grid-template-areas:
@@ -125,406 +74,420 @@ body {
       "referencias"
       "pieDePagina";
   }
-}
-/* Fin Body Recomendaciones */
-
-/* Barra de opciones */
-.barra {
-  background-color: grey;
-  /* height: 3vw;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  /* position: fixed; */
-  grid-area: barra; */
-}
-
-.barra li a {
-  text-decoration: none;
-  transition: transform 2s;
-  color: white;
-}
-
-.barra li:hover {
-  transform: scale(2.2);
-  z-index: 5;
-}
-
-/* li {
-  display: inline-block;
-  padding: 2%;
-  margin: 1%;
-  list-style: none;
-} */
-
-/* Nombre de la persona a la que pertenece la página */
-.nombre {
-  color: deeppink;
-  font-family: "IBM Plex Serif", serif;
-  font-size: 4vw;
-  margin-bottom: 1vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  grid-area: nombre;
-}
-
-.nombre:hover {
-  animation: nombreEnColores 3s infinite;
-}
-
-@keyframes nombreEnColores {
-  0% {
+  
+  /* COMPUTADORA y TABLET  */
+  @media only screen and (min-width: 768px) {
+    .bodyRecomendacion {
+      display: grid;
+      grid-template-areas:
+        "barra"
+        "nombre"
+        "subtitulo"
+        "formulario"
+        "referencias"
+        "pieDePagina";
+    }
+  }
+  /* Fin Body Recomendaciones */
+  
+  /* Barra de opciones */
+  .barra {
+    background-color: grey;
+    /* height: 3vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /* position: fixed; */
+    grid-area: barra; */
+  }
+  
+  .barra li a {
+    text-decoration: none;
+    transition: transform 2s;
+    color: white;
+  }
+  
+  .barra li:hover {
+    transform: scale(2.2);
+    z-index: 5;
+  }
+  
+  /* li {
+    display: inline-block;
+    padding: 2%;
+    margin: 1%;
+    list-style: none;
+  } */
+  
+  /* Nombre de la persona a la que pertenece la página */
+  .nombre {
     color: deeppink;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    grid-area: nombre;
   }
-  25% {
+  
+  .nombre:hover {
+    animation: nombreEnColores 3s infinite;
+  }
+  
+  @keyframes nombreEnColores {
+    0% {
+      color: deeppink;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: aqua;
+    }
+    100% {
+      color: magenta;
+    }
+  }
+  
+  .subtitulo {
+    background: rgb(150, 130, 147);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 130, 147, 1) 42%,
+      rgba(241, 37, 209, 1) 99%
+    );
     color: blue;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    grid-area: subtitulo;
   }
-  50% {
-    color: aqua;
+  
+  /* INDEX */
+  .central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  100% {
-    color: magenta;
+  
+  /* Index - Foto de la propietaria de la página */
+  .fotoJuli {
+    margin-bottom: 1vw;
+    grid-area: fotoCentral;
   }
-}
-
-.subtitulo {
-  background: rgb(150, 130, 147);
-  background: linear-gradient(
-    90deg,
-    rgba(150, 130, 147, 1) 42%,
-    rgba(241, 37, 209, 1) 99%
-  );
-  color: blue;
-  font-family: "IBM Plex Serif", serif;
-  font-size: 3vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  grid-area: subtitulo;
-}
-
-/* INDEX */
-.central {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Index - Foto de la propietaria de la página */
-.fotoJuli {
-  margin-bottom: 1vw;
-  grid-area: fotoCentral;
-}
-
-/* Index - Foto de la propioetaria de la página */
-.description {
-  color: pink;
-  font-size: 3vw;
-  text-align: center;
-  grid-area: descripcion;
-}
-
-/* Index - Invitacion de la propioetaria de la página */
-.invitacion {
-  color: blue;
-  font-size: 3vw;
-  grid-area: invitacion;
-}
-/* FIN INDEX */
-
-/* SOBRE MI */
-/* PC Y Tablet */
-@media only screen and (min-width: 768px) {
-  .presentacion {
-    margin-bottom: 4vw;
+  
+  /* Index - Foto de la propioetaria de la página */
+  .description {
+    color: pink;
+    font-size: 3vw;
+    text-align: center;
+    grid-area: descripcion;
   }
-
-  .sobreMiFoto {
-    transition: transform 3s, box-shadow 10s;
+  
+  /* Index - Invitacion de la propioetaria de la página */
+  .invitacion {
+    color: blue;
+    font-size: 3vw;
+    grid-area: invitacion;
   }
-
-  .sobreMiFoto:hover {
-    transform: scale(2.2);
-    z-index: 100;
+  /* FIN INDEX */
+  
+  /* SOBRE MI */
+  /* PC Y Tablet */
+  @media only screen and (min-width: 768px) {
+    .presentacion {
+      margin-bottom: 4vw;
+    }
+  
+    .sobreMiFoto {
+      transition: transform 3s, box-shadow 10s;
+    }
+  
+    .sobreMiFoto:hover {
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  
+    .sobreMiFotoFlia {
+      transition: transform 3s;
+    }
+  
+    .sobreMiFotoFlia:hover {
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  
+    .sobreMiFotoEmma {
+      transition: transform 3s;
+    }
+  
+    .sobreMiFotoEmma:hover {
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  
+    .sobreMiFotoPerris {
+      transition: transform 3s;
+    }
+  
+    .sobreMiFotoPerris:hover {
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  
   }
-
-  .sobreMiFotoFlia {
-    transition: transform 3s;
-  }
-
-  .sobreMiFotoFlia:hover {
-    transform: scale(2.2);
-    z-index: 100;
-  }
-
-  .sobreMiFotoEmma {
-    transition: transform 3s;
-  }
-
-  .sobreMiFotoEmma:hover {
-    transform: scale(2.2);
-    z-index: 100;
-  }
-
-  .sobreMiFotoPerris {
-    transition: transform 3s;
-  }
-
-  .sobreMiFotoPerris:hover {
-    transform: scale(2.2);
-    z-index: 100;
-  }
-
-}
-/* FIN SOBRE MI */
-
-
-
-/* FORMACION */
-.formacion {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.formacionAcademica {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 3vw;
-  grid-area: formacionAcademica;
-}
-
-.formacionAdicional {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 3vw;
-  grid-area: formacionAdicional;
-}
-
-.idiomas {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 3vw;
-  grid-area: idiomas;
-}
-
-/* PC Y Tablet */
-@media only screen and (min-width: 768px) {
+  /* FIN SOBRE MI */
+  
+  
+  
+  /* FORMACION */
   .formacion {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
-
+  
   .formacionAcademica {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 1vw;
+    margin-top: 3vw;
     grid-area: formacionAcademica;
   }
-
-  .otrosFormacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
+  
   .formacionAdicional {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: left;
-    margin-right: 3vw;
+    justify-content: center;
+    margin-top: 3vw;
     grid-area: formacionAdicional;
   }
-
+  
   .idiomas {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: right;
-    margin-left: 3vw;
+    justify-content: center;
+    margin-top: 3vw;
     grid-area: idiomas;
   }
-}
-/* FIN FORMACION */
-
-/* TRABAJOS */
-.trabajos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.subtituloExperiencia {
-  margin: 1vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.experiencialaboral .voluntariado {
-  display: flex;
-  flex-direction: column;
-}
-
-.puesto {
-  margin: 1vw;
-  padding: 1vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.puestoTitulo {
-  margin: 1vw;
-  padding: 1vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nombreRol {
-  margin: 1vw;
-  padding: 1vw;
-}
-/* FIN TRABAJOS */
-
-/* RECOMENDACIONES */
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: formulario;
-}
-
-.referencias {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-area: referencias;
-}
-
-/* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px) {
+  
+  /* PC Y Tablet */
+  @media only screen and (min-width: 768px) {
+    .formacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+    .formacionAcademica {
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1vw;
+      grid-area: formacionAcademica;
+    }
+  
+    .otrosFormacion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .formacionAdicional {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: left;
+      margin-right: 3vw;
+      grid-area: formacionAdicional;
+    }
+  
+    .idiomas {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: right;
+      margin-left: 3vw;
+      grid-area: idiomas;
+    }
+  }
+  /* FIN FORMACION */
+  
+  /* TRABAJOS */
+  .trabajos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .subtituloExperiencia {
+    margin: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .experiencialaboral .voluntariado {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .puesto {
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .puestoTitulo {
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nombreRol {
+    margin: 1vw;
+    padding: 1vw;
+  }
+  /* FIN TRABAJOS */
+  
+  /* RECOMENDACIONES */
   .formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     grid-area: formulario;
   }
-
+  
   .referencias {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     grid-area: referencias;
   }
-}
-/* FIN RECOMENDACIONES */
-
-/* FORMULARIO DE CONTACTO Y RECOMENDACIONES*/
-.formulario {
-  size: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.formularioCompletar {
-  height: 3vw;
-  width: 30vw;
-}
-
-.formularioMensaje {
-  font-family: "Roboto Condensed", sans-serif;
-  height: 10vw;
-  width: 40vw;
-}
-
-.formularioBotones {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.boton {
-  height: 2vw;
-  width: 10vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#borrar {
-  background-color: red;
-}
-
-#enviar {
-  background-color: green;
-}
-/* FIN CONTACTO */
-
-/* Footer */
-.pieDePagina {
-  background-color: grey;
-  height: 3vw;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-top: auto;
-}
-
-.pieDePagina ul li a:hover {
-  color: white;
-  transition: transform 2s;
-}
-
-.pieDePagina li:hover {
-  transform: scale(2.2);
-  z-index: 5;
-}
-
-.linkedin {
-  color: #0e76a8;
-  margin-right: 1vw;
-}
-
-.github {
-  color: #171515;
-  margin-right: 1vw;
-}
-
-.telegram {
-  color: #0088cc;
-}
+  
+  /* COMPUTADORA y TABLET  */
+  @media only screen and (min-width: 768px) {
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-area: formulario;
+    }
+  
+    .referencias {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      grid-area: referencias;
+    }
+  }
+  /* FIN RECOMENDACIONES */
+  
+  /* FORMULARIO DE CONTACTO Y RECOMENDACIONES*/
+  .formulario {
+    size: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .formularioCompletar {
+    height: 3vw;
+    width: 30vw;
+  }
+  
+  .formularioMensaje {
+    font-family: "Roboto Condensed", sans-serif;
+    height: 10vw;
+    width: 40vw;
+  }
+  
+  .formularioBotones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .boton {
+    height: 2vw;
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #borrar {
+    background-color: red;
+  }
+  
+  #enviar {
+    background-color: green;
+  }
+  /* FIN CONTACTO */
+  
+  /* Footer */
+  .pieDePagina {
+    background-color: grey;
+    height: 3vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: auto;
+  }
+  
+  .pieDePagina ul li a:hover {
+    color: white;
+    transition: transform 2s;
+  }
+  
+  .pieDePagina li:hover {
+    transform: scale(2.2);
+    z-index: 5;
+  }
+  
+  .linkedin {
+    color: #0e76a8;
+    margin-right: 1vw;
+  }
+  
+  .github {
+    color: #171515;
+    margin-right: 1vw;
+  }
+  
+  .telegram {
+    color: #0088cc;
+  }
+  

@@ -1,0 +1,78 @@
+/* Inicio Body Sobre Mi */
+/* Celular */
+.sobreMiBody {
+    display: grid;
+    grid-template-areas:
+      "barra"
+      "nombre"
+      "nombre"
+      "subtitulo"
+      "sobreMiFoto"
+      "presentacionDescripcion"
+      "sobreMiFotoFlia"
+      "sobreMiFotoEmma"
+      "sobreMiFotoPerris"
+      "conocemeMas"
+      "pieDePagina";
+  }
+  
+  /* COMPUTADORA y TABLET  */
+  @media only screen and (min-width: 768px) {
+    .sobreMiBody {
+      display: grid;
+      grid-template-areas:
+        "barra "
+        "nombre nombre nombre"
+        "subtitulo subtitulo subtitulo"
+        "sobreMiFoto presentacionDescripcion"
+        "sobreMiFotoFlia sobreMiFotoEmma sobreMifotoPerris"
+        "conocemeMas conocemeMas conocemeMas"
+        "pieDePagina pieDePagina pieDePagina";
+    }
+  }
+  /* Fin Body Sobre Mi */
+
+  /* SOBRE MI */
+/* PC Y Tablet */
+@media only screen and (min-width: 768px) {
+  .presentacion {
+    margin-bottom: 4vw;
+  }
+
+  .sobreMiFoto {
+    transition: transform 3s, box-shadow 10s;
+
+    &:hover {
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  }
+
+  .sobreMiFotoFlia {
+    transition: transform 3s;
+
+    &:hover {
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  }
+
+  .sobreMiFotoEmma {
+    transition: transform 3s;
+
+    &:hover {
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  }
+
+  .sobreMiFotoPerris {
+    transition: transform 3s;
+
+    &:hover{
+      transform: scale(2.2);
+      z-index: 100;
+    }
+  }
+}
+/* FIN SOBRE MI */

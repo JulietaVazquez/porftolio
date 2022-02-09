@@ -1,0 +1,36 @@
+/* Footer */
+.pieDePagina {
+  background-color: $colorNav;
+  height: 3vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: auto;
+
+  ul li a:hover {
+    color: white;
+    transition: transform 2s;
+  }
+
+  li:hover {
+    transform: scale(2.2);
+    z-index: 5;
+  }
+}
+
+.linkedin {
+  color: #0e76a8;
+  margin-right: 1vw;
+}
+
+.github {
+  color: #171515;
+  margin-right: 1vw;
+}
+
+.telegram {
+  color: #0088cc;
+}

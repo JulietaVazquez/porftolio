@@ -1,0 +1,62 @@
+/* Inicio Body Recomendaciones */
+/* Celular */
+.bodyRecomendacion {
+    display: grid;
+    grid-template-areas:
+      "barra"
+      "nombre"
+      "subtitulo"
+      "formulario"
+      "referencias"
+      "pieDePagina";
+  }
+  
+  /* COMPUTADORA y TABLET  */
+  @media only screen and (min-width: 768px) {
+    .bodyRecomendacion {
+      display: grid;
+      grid-template-areas:
+        "barra"
+        "nombre"
+        "subtitulo"
+        "formulario"
+        "referencias"
+        "pieDePagina";
+    }
+  }
+  /* Fin Body Recomendaciones */
+
+  /* RECOMENDACIONES */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: formulario;
+}
+
+.referencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: referencias;
+}
+
+/* COMPUTADORA y TABLET  */
+@media only screen and (min-width: 768px) {
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: formulario;
+  }
+
+  .referencias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: referencias;
+  }
+}
+/* FIN RECOMENDACIONES */

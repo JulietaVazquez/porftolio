@@ -1,0 +1,55 @@
+/* Inicio Body INDEX */
+.inicio {
+    display: grid;
+    grid-template-areas:
+      "barra"
+      "nombre"
+      "nombre"
+      "fotoCentral"
+      "fotoCentral"
+      "fotoCentral"
+      "descripcion"
+      "descripcion"
+      "invitacion"
+      "pieDePagina";
+  }
+  
+  .inicio {
+    background-image: url("/img/fondo2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90%;
+  }
+  /* Fin Body Index */
+
+  /* INDEX */
+.central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Index - Foto de la propietaria de la página */
+  .fotoJuli {
+    margin-bottom: 1vw;
+    grid-area: fotoCentral;
+  }
+  
+  /* Index - Foto de la propioetaria de la página */
+  .description {
+    color: pink;
+    font-size: 3vw;
+    text-align: center;
+    grid-area: descripcion;
+  }
+  
+  /* Index - Invitacion de la propioetaria de la página */
+  .invitacion {
+    color: blue;
+    font-size: 3vw;
+    grid-area: invitacion;
+  }
+  /* FIN INDEX */
