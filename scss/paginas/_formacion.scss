@@ -14,7 +14,7 @@
   }
   
   /* COMPUTADORA y TABLET  */
-  @media only screen and (min-width: 768px) {
+  @include mediaQueryTabletPc {
     .bodyFormacion {
       display: grid;
       grid-template-areas:
@@ -30,33 +30,24 @@
 
  /* FORMACION */
 .formacion {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  @extend flexColumCenter;
   align-items: center;
 }
 
 .formacionAcademica {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  @extend flexColumCenter;
   margin-top: 3vw;
   grid-area: formacionAcademica;
 }
 
 .idiomas {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  @extend flexColumCenter;
   margin-top: 3vw;
   grid-area: idiomas;
 }
 
 /* PC Y Tablet */
-@media only screen and (min-width: 768px) {
+@include mediaQueryTabletPc {
   .formacion {
     display: flex;
     flex-direction: column;
@@ -64,10 +55,7 @@
   }
 
   .formacionAcademica {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    justify-content: center;
+    @extend flexColumCenter;
     align-items: center;
     margin-bottom: 1vw;
     grid-area: formacionAcademica;
@@ -81,18 +69,14 @@
   }
 
   .formacionAdicional {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @extend flexColum;
     justify-content: left;
     margin-right: 3vw;
     grid-area: formacionAdicional;
   }
 
   .idiomas {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @extend flexColum;
     justify-content: right;
     margin-left: 3vw;
     grid-area: idiomas;

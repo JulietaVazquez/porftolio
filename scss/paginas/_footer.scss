@@ -1,17 +1,13 @@
 /* Footer */
 .pieDePagina {
-  background-color: $colorNav;
+  background-color: map-get($colores, colorNav);
   height: 3vw;
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-end;
+  @extend %flexFooter;
   margin-top: auto;
 
   ul li a:hover {
-    color: white;
+    color: map-get($colores, colorHoverFoot);
     transition: transform 2s;
   }
 
@@ -22,15 +18,15 @@
 }
 
 .linkedin {
-  color: #0e76a8;
+  color: map-get($colores, logoLinkedin);
   margin-right: 1vw;
 }
 
 .github {
-  color: #171515;
+  color: map-get($colores, logoGithub);
   margin-right: 1vw;
 }
 
 .telegram {
-  color: #0088cc;
+  color: map-get($colores, logoTelegram );
 }

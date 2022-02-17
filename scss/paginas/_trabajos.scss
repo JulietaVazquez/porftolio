@@ -1,8 +1,6 @@
 /* TRABAJOS */
 .trabajos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @extend flexColum;
   }
   
   .subtituloExperiencia {
@@ -21,21 +19,15 @@
   .puesto {
     margin: 1vw;
     padding: 1vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    @extend flexFormBotones;
+    justify-content: flex-start;    
   }
   
   .puestoTitulo {
     margin: 1vw;
     padding: 1vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    @extend flexFormBotones;
     justify-content: space-around;
-    align-items: center;
   }
   
   .nombreRol {

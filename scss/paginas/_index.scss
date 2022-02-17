@@ -26,10 +26,7 @@
 
   /* INDEX */
 .central {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend flexFormulario;
   }
   
   /* Index - Foto de la propietaria de la página */
@@ -40,7 +37,7 @@
   
   /* Index - Foto de la propioetaria de la página */
   .description {
-    color: pink;
+    color: map-get($colores , colorDescription);
     font-size: 3vw;
     text-align: center;
     grid-area: descripcion;
@@ -48,7 +45,7 @@
   
   /* Index - Invitacion de la propioetaria de la página */
   .invitacion {
-    color: blue;
+    color: map-get($colores, colorInvitacion );
     font-size: 3vw;
     grid-area: invitacion;
   }

@@ -1,12 +1,12 @@
 /* Barra de opciones */
 .barra {
-    background-color: $colorNav;
+    background-color: map-get($color, colorNav);
     grid-area: barra; 
 
     li a {
       text-decoration: none;
       transition: transform 2s;
-      color: white;
+      color: map-get($color , colorPalabrasNav);
     }
 
     &hover {
@@ -18,8 +18,8 @@
       
   /* Nombre de la persona a la que pertenece la página */
   .nombre {
-    color: $colorNombre;
-    font-family: "IBM Plex Serif", serif;
+    color: map-get($color, $colorNombre) ;
+    font-family: map-get($tipografias , tipogrNombre);
     font-size: 4vw;
     margin-bottom: 1vw;
     display: flex;
@@ -56,12 +56,10 @@
       rgba(150, 130, 147, 1) 42%,
       rgba(241, 37, 209, 1) 99% 
     );
-    color: blue;
-    font-family: "IBM Plex Serif", serif;
+    color: map-get($colores, colorSubtitulo );
+    font-family: map-get($tipografias, tipogrNombre );
     font-size: 3vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    @extend flexRowGrl;
     justify-content: center;
     grid-area: subtitulo;
   }

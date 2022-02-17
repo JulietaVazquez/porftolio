@@ -17,7 +17,7 @@
   }
   
   /* COMPUTADORA y TABLET  */
-  @media only screen and (min-width: 768px) {
+  @include mediaQueryTabletPc{
     .sobreMiBody {
       display: grid;
       grid-template-areas:
@@ -34,7 +34,7 @@
 
   /* SOBRE MI */
 /* PC Y Tablet */
-@media only screen and (min-width: 768px) {
+@include mediaQueryTabletPc {
   .presentacion {
     margin-bottom: 4vw;
   }

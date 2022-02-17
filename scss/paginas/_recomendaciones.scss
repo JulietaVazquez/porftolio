@@ -12,7 +12,7 @@
   }
   
   /* COMPUTADORA y TABLET  */
-  @media only screen and (min-width: 768px) {
+  @include mediaQueryTabletPc {
     .bodyRecomendacion {
       display: grid;
       grid-template-areas:
@@ -28,26 +28,20 @@
 
   /* RECOMENDACIONES */
 .formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @extend flexColumCenter;
   grid-area: formulario;
 }
 
 .referencias {
-  display: flex;
-  flex-direction: column;
+  @extend flexColum;
   align-items: center;
   grid-area: referencias;
 }
 
 /* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px) {
+@include mediaQueryTabletPc {
   .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend flexFormulario;
     grid-area: formulario;
   }
 

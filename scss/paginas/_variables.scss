@@ -1,4 +1,67 @@
-$colorFondo: rgb(207, 205, 205);
-$tipografia: "Roboto Condensed", sans-serif;
-$colorNav: grey;
-$colorNombre: deeppink;
+/* MAPS */
+$colores {
+  colorFondo: rgb(207, 205, 205),
+  colorNav: grey,
+  colorNombre: deeppink,
+  colorPalabrasNav: white,
+  colorSubtitulo: blue,
+  colorDescription: pink,
+  colorInvitacion: blue,
+  colorHoverFoot: white,
+  logoLinkedin: #0e76a8,
+  logoGithub: #171515,
+  logoTelegram: #0088cc,
+  bgBotonBorrar: red,
+  bgBotonEnviar: green,
+};
+
+$tipografias {
+tipogrNombre: "IBM Plex Serif", serif,
+tipogrGrl: "Roboto Condensed", sans-serif,
+};
+
+/* Extends */
+%flexRowGrl{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+};
+
+%flexFooter{
+  @extend flexRowGrl;
+  justify-content: space-around;
+  align-items: flex-end;
+};
+
+%flexFormBotones{
+  @extend flexRowGrl;
+  align-items: center;
+};
+
+%flexFormBoton{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+};
+
+%flexColum{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+};
+
+%flexColumCenter{
+  @extend flexColum;
+  justify-content: center;
+};
+
+%{
+  @extend flexColumCenter;
+  align-items: center;
+};
+
+@mixin mediaQueryTabletPc {
+  @media only screen and (min-width: 768px){
+    @content;
+  }
+}

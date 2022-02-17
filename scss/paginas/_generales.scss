@@ -7,8 +7,8 @@
   }
   
   body {
-    font-family: $tipografia;
-    background-color: $colorFondo;
+    font-family: map-get($tipografias , tipogrGrl );
+    background-color: map-get($colores, colorFondo);
     width: 100vw;
     min-height: 100vh;
   }

@@ -1,0 +1,35 @@
+/* FORMULARIO DE CONTACTO Y RECOMENDACIONES*/
+.formulario {
+    size: 30%;
+    @extend %flexFormulario;
+  }
+  
+  .formularioCompletar {
+    height: 3vw;
+    width: 30vw;
+  }
+  
+  .formularioMensaje {
+    font-family: map-get($tipografias, tipogrGrl);
+    height: 10vw;
+    width: 40vw;
+  }
+  
+  .formularioBotones {
+    @extend %flexFormBotones;
+  }
+  
+  .boton {
+    height: 2vw;
+    width: 10vw;
+    @extend %flexFormBoton;
+  }
+  
+  #borrar {
+    background-color: map-get($colores , bgBotonBorrar);
+  }
+  
+  #enviar {
+    background-color: map-get($colores, bgBotonEnviar);
+  }
+  /* FIN CONTACTO */
