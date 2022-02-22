@@ -6,11 +6,3 @@ Modificaciones realizadas:
 4- Agrego los mixin en scss de variables relacionados a las MediasQuerys de 
 Tablet y pc, pueden verse en los scss de formación, Recomendaciones.
 5- Creo el sitemap
-
-MensajeExtra: Bruno tengo algunas ideas sobre las que quiero trabajar para mejorar 
-el código como por ejemplo se me ocurre en los flex, combinar el extend con el mixin, 
-y ver que otras utilidades brindarle, pero desde la semana pasada vengo con problemas 
-familiares que me estan dificultando poder brindarle el tiempo que me gustaria al proyecto. 
-Por ello el objetivo del mensaje es comentarte mi "proyecto", y espero me sepas comprender.
-
-Muchas gracias.

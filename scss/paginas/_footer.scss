@@ -1,21 +1,21 @@
 /* Footer */
-.pieDePagina {
-  background-color: map-get($colores, colorNav);
-  height: 3vw;
-  width: 100vw;
-  @extend %flexFooter;
-  margin-top: auto;
+  .pieDePagina {
+    background-color: map-get($colores, colorNav);
+    height: 3vw;
+    width: 100vw;
+    @extend %flexFooter;
+    margin-top: auto;
+   
+    ul li a:hover {
+      color: map-get($colores, colorHoverFoot);
+      transition: transform 2s;
+    }
 
-  ul li a:hover {
-    color: map-get($colores, colorHoverFoot);
-    transition: transform 2s;
+    li:hover {
+      transform: scale(2.2);
+      z-index: 5;
+    }
   }
-
-  li:hover {
-    transform: scale(2.2);
-    z-index: 5;
-  }
-}
 
 .linkedin {
   color: map-get($colores, logoLinkedin);
@@ -28,5 +28,5 @@
 }
 
 .telegram {
-  color: map-get($colores, logoTelegram );
+  color: map-get($colores, logoTelegram);
 }
