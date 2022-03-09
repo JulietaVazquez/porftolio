@@ -1,56 +1,56 @@
 /* Inicio Body Recomendaciones */
 /* Celular */
 .bodyRecomendacion {
-    display: grid;
-    grid-template-areas:
-      "barra"
-      "nombre"
-      "subtitulo"
-      "formulario"
-      "referencias"
-      "pieDePagina";
-  }
-  
-  /* COMPUTADORA y TABLET  */
-  @include mediaQueryTabletPc {
-    .bodyRecomendacion {
-      display: grid;
-      grid-template-areas:
-        "barra"
-        "nombre"
-        "subtitulo"
-        "formulario"
-        "referencias"
-        "pieDePagina";
-    }
-  }
-  /* Fin Body Recomendaciones */
+  display: grid;
+  grid-template-areas:
+    "encabezado"
+    "formularioRec"
+    "referencias"
+    "pieDePagina";
+}
 
-  /* RECOMENDACIONES */
-.formulario {
-  @extend flexColumCenter;
-  grid-area: formulario;
+/* RECOMENDACIONES */
+.formularioRecomendaciones {
+  @extend %flexColumCenterCenter;
+  grid-area: formularioRec;
 }
 
 .referencias {
-  @extend flexColum;
-  align-items: center;
+  @extend %flexColum;
+  align-items:center;
+  margin-left: 2vh;
+  margin-right: 2vh;
   grid-area: referencias;
 }
 
 /* COMPUTADORA y TABLET  */
 @include mediaQueryTabletPc {
-  .formulario {
-    @extend flexFormulario;
-    grid-area: formulario;
+  .formularioRecomendaciones {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: formularioRec;
   }
 
   .referencias {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content:left;
+    align-items: center;    
     grid-area: referencias;
+
+    .nombreRef{
+      font-size: 4vh;
+    }
+
+    .detalleRef{
+      font-size: 3vh;
+    }
+  }
+  .divReferencia{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
   }
 }
 /* FIN RECOMENDACIONES */

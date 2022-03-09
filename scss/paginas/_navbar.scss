@@ -1,25 +1,25 @@
 /* Barra de opciones */
 .barra {
-    background-color: map-get($color, colorNav);
+    background-color: map-get($colores, colorNav);
     grid-area: barra; 
 
     li a {
+      font-size: 3vh;
       text-decoration: none;
       transition: transform 2s;
-      color: map-get($color , colorPalabrasNav);
+      color: map-get($colores , colorPalabrasNav);
     }
 
     &hover {
       transform: scale(2.2);
       z-index: 5;
     }
-
   }
       
   /* Nombre de la persona a la que pertenece la página */
   .nombre {
-    color: map-get($color, $colorNombre) ;
-    font-family: map-get($tipografias , tipogrNombre);
+    color: map-get($colores, colorNombre) ;
+    font-family: "IBM Plex Serif", serif;
     font-size: 4vw;
     margin-bottom: 1vw;
     display: flex;
@@ -32,8 +32,7 @@
       animation: nombreEnColores 3s infinite;
     }
   }
-  
-  
+    
   @keyframes nombreEnColores {
     0% {
       color: deeppink;
@@ -50,17 +49,17 @@
   }
   
   .subtitulo {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 3vw;
     background: rgb(150, 130, 147);
     background: linear-gradient(  
       90deg,
       rgba(150, 130, 147, 1) 42%,
       rgba(241, 37, 209, 1) 99% 
     );
-    color: map-get($colores, colorSubtitulo );
-    font-family: map-get($tipografias, tipogrNombre );
-    font-size: 3vw;
-    @extend flexRowGrl;
+    color: map-get($colores, colorSubtitulo);
+    
+    @extend %flexRowGrl;
     justify-content: center;
     grid-area: subtitulo;
   }
-  

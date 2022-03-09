@@ -2,9 +2,7 @@
 .inicio {
     display: grid;
     grid-template-areas:
-      "barra"
-      "nombre"
-      "nombre"
+      "encabezado"
       "fotoCentral"
       "fotoCentral"
       "fotoCentral"
@@ -26,7 +24,7 @@
 
   /* INDEX */
 .central {
-    @extend flexFormulario;
+    @extend %flexColumCenterCenter;
   }
   
   /* Index - Foto de la propietaria de la página */

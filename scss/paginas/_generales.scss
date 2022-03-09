@@ -1,15 +1,16 @@
-@import "./navbar";
-@import "./footer";
-
 * {
     margin: 0%;
-    padding: 0%;
+    padding: 0%;    
   }
   
   body {
-    font-family: map-get($tipografias , tipogrGrl );
+    font-family: "Roboto Condensed", sans-serif;
     background-color: map-get($colores, colorFondo);
     width: 100vw;
     min-height: 100vh;
-       
+    overflow-x: hidden;
+  }
+
+  .encabezado{
+    grid-area: encabezado;
   }

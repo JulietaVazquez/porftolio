@@ -1,10 +1,21 @@
 /* Inicio Body Formacion */
 /* Celular */
 .bodyFormacion {
+  display: grid;
+  grid-template-areas:
+    "encabezado"
+    "formacionAcademica"
+    "formacionAdicional"
+    "idiomas"
+    "pieDePagina";
+}
+
+/* COMPUTADORA y TABLET  */
+@include mediaQueryTabletPc {
+  .bodyFormacion {
     display: grid;
     grid-template-areas:
       "barra"
-      "nombre"
       "nombre"
       "subtitulo"
       "formacionAcademica"
@@ -12,36 +23,23 @@
       "idiomas"
       "pieDePagina";
   }
-  
-  /* COMPUTADORA y TABLET  */
-  @include mediaQueryTabletPc {
-    .bodyFormacion {
-      display: grid;
-      grid-template-areas:
-        "barra"
-        "nombre"
-        "subtitulo"
-        "formacionAcademica"
-        "formacionAdicional idiomas"
-        "pieDePagina";
-    }
-  }
-  /* Fin Body Formacion */
+}
+/* Fin Body Formacion */
 
- /* FORMACION */
+/* FORMACION */
 .formacion {
-  @extend flexColumCenter;
+  @extend %flexColumCenter;
   align-items: center;
 }
 
 .formacionAcademica {
-  @extend flexColumCenter;
+  @extend %flexColumCenter;
   margin-top: 3vw;
   grid-area: formacionAcademica;
 }
 
 .idiomas {
-  @extend flexColumCenter;
+  @extend %flexColumCenter;
   margin-top: 3vw;
   grid-area: idiomas;
 }
@@ -55,7 +53,10 @@
   }
 
   .formacionAcademica {
-    @extend flexColumCenter;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-bottom: 1vw;
     grid-area: formacionAcademica;
@@ -69,18 +70,36 @@
   }
 
   .formacionAdicional {
-    @extend flexColum;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: left;
-    margin-right: 3vw;
+    margin-right: 4vw;
     grid-area: formacionAdicional;
-  }
+  }  
 
   .idiomas {
-    @extend flexColum;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: right;
-    margin-left: 3vw;
+    margin-left: 4vw;
     grid-area: idiomas;
   }
+  
+  .tipoFormacion{
+    color: blue;
+    font-size: 5vh;
+  }
+  .titulo{
+    font-size: 5vh;
+  }
+  .institucion{
+    font-size: 4vh;
+  }
+  .descripcion{
+    font-size: 3vh;
+  }
 }
+
 /* FIN FORMACION */
- 

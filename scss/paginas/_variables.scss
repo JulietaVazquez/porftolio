@@ -1,5 +1,5 @@
 /* MAPS */
-$colores {
+$colores:(
   colorFondo: rgb(207, 205, 205),
   colorNav: grey,
   colorNombre: deeppink,
@@ -12,13 +12,8 @@ $colores {
   logoGithub: #171515,
   logoTelegram: #0088cc,
   bgBotonBorrar: red,
-  bgBotonEnviar: green,
-};
-
-$tipografias {
-tipogrNombre: "IBM Plex Serif", serif,
-tipogrGrl: "Roboto Condensed", sans-serif,
-};
+  bgBotonEnviar: rgb(31, 216, 31),
+  );
 
 /* Extends */
 %flexRowGrl{
@@ -28,13 +23,17 @@ tipogrGrl: "Roboto Condensed", sans-serif,
 };
 
 %flexFooter{
-  @extend flexRowGrl;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-end;
 };
 
 %flexFormBotones{
-  @extend flexRowGrl;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
 };
 
@@ -51,12 +50,17 @@ tipogrGrl: "Roboto Condensed", sans-serif,
 };
 
 %flexColumCenter{
-  @extend flexColum;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 };
 
-%{
-  @extend flexColumCenter;
+%flexColumCenterCenter{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 };
 

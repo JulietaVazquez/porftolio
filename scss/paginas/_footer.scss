@@ -1,21 +1,22 @@
 /* Footer */
-  .pieDePagina {
-    background-color: map-get($colores, colorNav);
-    height: 3vw;
-    width: 100vw;
-    @extend %flexFooter;
-    margin-top: auto;
-   
-    ul li a:hover {
-      color: map-get($colores, colorHoverFoot);
-      transition: transform 2s;
-    }
+.pieDePagina {
+  background-color: map-get($colores, colorNav);
+  height: 3vw;
+  width: 100vw;
+  @extend %flexFooter;
+  align-self: flex-end;
+  grid-area: pieDePagina;
 
-    li:hover {
-      transform: scale(2.2);
-      z-index: 5;
-    }
+  ul li a:hover {
+    color: map-get($colores, colorHoverFoot);
+    transition: transform 2s;
   }
+
+  li:hover {
+    transform: scale(2.2);
+    z-index: 5;
+  }
+}
 
 .linkedin {
   color: map-get($colores, logoLinkedin);

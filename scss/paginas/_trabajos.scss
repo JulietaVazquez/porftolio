@@ -1,37 +1,64 @@
 /* TRABAJOS */
+/* .trabajo {
+  display: grid;
+  grid-template-areas: 
+  "encabezado encabezado encabezado"
+  "subtituloExperiencia subtituloExperiencia subtituloExperiencia"
+  "nombrePuesto periodo detallePuesto"
+  "subtituloExperiencia subtituloExperiencia subtituloExperiencia"
+  "puestoTitulo nombreRol periodoVol"
+  "pieDePagina pieDePagina pieDePagina"
+  ;
+} */
+
 .trabajos {
-    @extend flexColum;
-  }
-  
-  .subtituloExperiencia {
-    margin: 1vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  @extend %flexColum;
+}
+
   .experiencialaboral .voluntariado {
     display: flex;
     flex-direction: column;
   }
-  
-  .puesto {
-    margin: 1vw;
-    padding: 1vw;
-    @extend flexFormBotones;
-    justify-content: flex-start;    
-  }
-  
-  .puestoTitulo {
-    margin: 1vw;
-    padding: 1vw;
-    @extend flexFormBotones;
-    justify-content: space-around;
-  }
-  
-  .nombreRol {
-    margin: 1vw;
-    padding: 1vw;
-  }
-  /* FIN TRABAJOS */
+
+    .subtituloExperiencia {
+      background-color: rgb(161, 159, 159);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      grid-area: subtituloExperiencia;
+    }
+
+    .puesto {
+      margin: 1vw;
+      padding: 1vw;
+      @extend %flexFormBotones;
+      justify-content: flex-start;
+    } 
+
+      .puestoTitulo {
+        font-size: 4vh;  
+        width: 70%;
+        @extend %flexFormBotones;
+        justify-content: space-around;
+
+        .nombrePuesto {
+          font-size: 4vh;
+          width: 55%;
+          grid-area: nombrePuesto;
+        }
+
+        .periodo {
+          font-size: 3vh;
+          width: 40%;
+          grid-area: periodo;
+        }
+      }
+
+      .detallePuesto {
+        font-size: 3vh;
+        width: 30%;
+        grid-area: detallePuesto;
+      }    
+    
+/* FIN TRABAJOS */

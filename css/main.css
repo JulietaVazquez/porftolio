@@ -1,9 +1,67 @@
 @charset "UTF-8";
+/* MAPS */
+/* Extends */
+.subtitulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.pieDePagina {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end; }
+
+.puesto, .puestoTitulo, .formularioBotones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.boton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.referencias, .trabajos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.formacion, .formacionAcademica, .idiomas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.central, .formularioRecomendaciones, .formularioContacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #cfcdcd;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.encabezado {
+  grid-area: encabezado; }
+
 /* Barra de opciones */
 .barra {
   background-color: grey;
   grid-area: barra; }
   .barra li a {
+    font-size: 3vh;
     text-decoration: none;
     transition: transform 2s;
     color: white; }
@@ -36,14 +94,11 @@
     color: magenta; } }
 
 .subtitulo {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 3vw;
   background: #968293;
   background: linear-gradient(90deg, #968293 42%, #f125d1 99%);
   color: blue;
-  font-family: "IBM Plex Serif", serif;
-  font-size: 3vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   grid-area: subtitulo; }
 
@@ -52,12 +107,8 @@
   background-color: grey;
   height: 3vw;
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-top: auto; }
+  align-self: flex-end;
+  grid-area: pieDePagina; }
   .pieDePagina ul li a:hover {
     color: white;
     transition: transform 2s; }
@@ -76,20 +127,10 @@
 .telegram {
   color: #0088cc; }
 
-* {
-  margin: 0%;
-  padding: 0%; }
-
-body {
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: #cfcdcd;
-  width: 100vw;
-  min-height: 100vh; }
-
 /* Inicio Body INDEX */
 .inicio {
   display: grid;
-  grid-template-areas: "barra" "nombre" "nombre" "fotoCentral" "fotoCentral" "fotoCentral" "descripcion" "descripcion" "invitacion" "pieDePagina"; }
+  grid-template-areas: "encabezado" "fotoCentral" "fotoCentral" "fotoCentral" "descripcion" "descripcion" "invitacion" "pieDePagina"; }
 
 .inicio {
   background-image: url("/img/fondo2.jpg");
@@ -101,12 +142,6 @@ body {
 
 /* Fin Body Index */
 /* INDEX */
-.central {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 /* Index - Foto de la propietaria de la página */
 .fotoJuli {
   margin-bottom: 1vw;
@@ -130,36 +165,24 @@ body {
 /* Celular */
 .bodyFormacion {
   display: grid;
-  grid-template-areas: "barra" "nombre" "nombre" "subtitulo" "formacionAcademica" "formacionAdicional" "idiomas" "pieDePagina"; }
+  grid-template-areas: "encabezado" "formacionAcademica" "formacionAdicional" "idiomas" "pieDePagina"; }
 
 /* COMPUTADORA y TABLET  */
 @media only screen and (min-width: 768px) {
   .bodyFormacion {
     display: grid;
-    grid-template-areas: "barra" "nombre" "subtitulo" "formacionAcademica" "formacionAdicional idiomas" "pieDePagina"; } }
+    grid-template-areas: "barra" "nombre" "subtitulo" "formacionAcademica" "formacionAdicional" "idiomas" "pieDePagina"; } }
 
 /* Fin Body Formacion */
 /* FORMACION */
 .formacion {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center; }
 
 .formacionAcademica {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 3vw;
   grid-area: formacionAcademica; }
 
 .idiomas {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 3vw;
   grid-area: idiomas; }
 
@@ -172,7 +195,7 @@ body {
   .formacionAcademica {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 1vw;
@@ -187,64 +210,70 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
-    margin-right: 3vw;
+    margin-right: 4vw;
     grid-area: formacionAdicional; }
   .idiomas {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: right;
-    margin-left: 3vw;
-    grid-area: idiomas; } }
+    margin-left: 4vw;
+    grid-area: idiomas; }
+  .tipoFormacion {
+    color: blue;
+    font-size: 5vh; }
+  .titulo {
+    font-size: 5vh; }
+  .institucion {
+    font-size: 4vh; }
+  .descripcion {
+    font-size: 3vh; } }
 
 /* FIN FORMACION */
 /* Inicio Body Recomendaciones */
 /* Celular */
 .bodyRecomendacion {
   display: grid;
-  grid-template-areas: "barra" "nombre" "subtitulo" "formulario" "referencias" "pieDePagina"; }
+  grid-template-areas: "encabezado" "formularioRec" "referencias" "pieDePagina"; }
 
-/* COMPUTADORA y TABLET  */
-@media only screen and (min-width: 768px) {
-  .bodyRecomendacion {
-    display: grid;
-    grid-template-areas: "barra" "nombre" "subtitulo" "formulario" "referencias" "pieDePagina"; } }
-
-/* Fin Body Recomendaciones */
 /* RECOMENDACIONES */
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: formulario; }
+.formularioRecomendaciones {
+  grid-area: formularioRec; }
 
 .referencias {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-left: 2vh;
+  margin-right: 2vh;
   grid-area: referencias; }
 
 /* COMPUTADORA y TABLET  */
 @media only screen and (min-width: 768px) {
-  .formulario {
+  .formularioRecomendaciones {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    grid-area: formulario; }
+    grid-area: formularioRec; }
   .referencias {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
-    grid-area: referencias; } }
+    grid-area: referencias; }
+    .referencias .nombreRef {
+      font-size: 4vh; }
+    .referencias .detalleRef {
+      font-size: 3vh; }
+  .divReferencia {
+    margin-top: 3vh;
+    margin-bottom: 2vh; } }
 
 /* FIN RECOMENDACIONES */
 /* Inicio Body Sobre Mi */
 /* Celular */
 .sobreMiBody {
   display: grid;
-  grid-template-areas: "barra" "nombre" "nombre" "subtitulo" "sobreMiFoto" "presentacionDescripcion" "sobreMiFotoFlia" "sobreMiFotoEmma" "sobreMiFotoPerris" "conocemeMas" "pieDePagina"; }
+  grid-template-areas: "encabezado" "sobreMiFoto" "presentacionDescripcion" "sobreMiFotoFlia" "sobreMiFotoEmma" "sobreMiFotoPerris" "conocemeMas" "pieDePagina"; }
 
 /* COMPUTADORA y TABLET  */
 @media only screen and (min-width: 768px) {
@@ -281,52 +310,62 @@ body {
 
 /* FIN SOBRE MI */
 /* TRABAJOS */
-.trabajos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
-
-.subtituloExperiencia {
-  margin: 1vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
+/* .trabajo {
+  display: grid;
+  grid-template-areas: 
+  "encabezado encabezado encabezado"
+  "subtituloExperiencia subtituloExperiencia subtituloExperiencia"
+  "nombrePuesto periodo detallePuesto"
+  "subtituloExperiencia subtituloExperiencia subtituloExperiencia"
+  "puestoTitulo nombreRol periodoVol"
+  "pieDePagina pieDePagina pieDePagina"
+  ;
+} */
 .experiencialaboral .voluntariado {
   display: flex;
   flex-direction: column; }
 
+.subtituloExperiencia {
+  background-color: #a19f9f;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: subtituloExperiencia; }
+
 .puesto {
   margin: 1vw;
   padding: 1vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center; }
+  justify-content: flex-start; }
 
 .puestoTitulo {
-  margin: 1vw;
-  padding: 1vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center; }
+  font-size: 4vh;
+  width: 70%;
+  justify-content: space-around; }
+  .puestoTitulo .nombrePuesto {
+    font-size: 4vh;
+    width: 55%;
+    grid-area: nombrePuesto; }
+  .puestoTitulo .periodo {
+    font-size: 3vh;
+    width: 40%;
+    grid-area: periodo; }
 
-.nombreRol {
-  margin: 1vw;
-  padding: 1vw; }
+.detallePuesto {
+  font-size: 3vh;
+  width: 30%;
+  grid-area: detallePuesto; }
 
 /* FIN TRABAJOS */
-/* FORMULARIO DE CONTACTO Y RECOMENDACIONES*/
-.formulario {
-  size: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+/* Body CONTACTO*/
+.contacto {
+  display: grid;
+  grid-template-areas: "encabezado" "formularioContacto" "pieDePagina"; }
+
+/* FORMULARIO DE CONTACTO*/
+.formularioContacto {
+  size: 40%;
+  grid-area: formularioContacto; }
 
 .formularioCompletar {
   height: 3vw;
@@ -337,23 +376,14 @@ body {
   height: 10vw;
   width: 40vw; }
 
-.formularioBotones {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center; }
-
 .boton {
   height: 2vw;
-  width: 10vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  width: 10vw; }
 
 #borrar {
   background-color: red; }
 
 #enviar {
-  background-color: green; }
+  background-color: #1fd81f; }
 
 /* FIN CONTACTO */

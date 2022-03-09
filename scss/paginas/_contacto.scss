@@ -1,7 +1,17 @@
-/* FORMULARIO DE CONTACTO Y RECOMENDACIONES*/
-.formulario {
-    size: 30%;
-    @extend %flexFormulario;
+/* Body CONTACTO*/
+.contacto {
+    display: grid;
+    grid-template-areas:
+      "encabezado"
+      "formularioContacto"
+      "pieDePagina";
+  }
+
+  /* FORMULARIO DE CONTACTO*/
+.formularioContacto {
+    size: 40%;
+    @extend %flexColumCenterCenter;
+    grid-area: formularioContacto;
   }
   
   .formularioCompletar {
@@ -10,7 +20,7 @@
   }
   
   .formularioMensaje {
-    font-family: map-get($tipografias, tipogrGrl);
+    font-family: "Roboto Condensed", sans-serif;
     height: 10vw;
     width: 40vw;
   }
